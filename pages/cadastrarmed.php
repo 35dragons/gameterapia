@@ -50,6 +50,7 @@ Licence URI: http://www.os-templates.com/template-terms
   <div id="pageintro" class="hoc clear"> 
     <!-- ################################################################################################ -->
     <article class="introtxt">
+	<form method="post" action="cad_usuarios.php" id="cad">
 		<div class="input-group">
 			<label for="usr">Nome:</label>
 			<input type="text" class="form-control" aria-describedby="basic-addon1" id="usr" name="nome">
@@ -72,6 +73,7 @@ Licence URI: http://www.os-templates.com/template-terms
           <li><a class="btn" name="acao" href="../home.html">Entrar</a></li>
         </ul>
       </footer>
+	  </form>
     </article>
    </div>
 </div>
