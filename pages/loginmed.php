@@ -66,7 +66,7 @@ Licence URI: http://www.os-templates.com/template-terms
           <li><a class="btn" href="../home.html">Entrar</a></li>
         </ul>
       </footer>
-	  <p class="nospace"><a href="#">Não possui conta? Cadastre-se aqui</a></p>
+	  <p class="nospace"><a href="cadastrarmed.php">Não possui conta? Cadastre-se aqui</a></p>
     </article>
    </div>
 </div>
