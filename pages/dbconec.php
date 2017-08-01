@@ -1,6 +1,6 @@
 <?php
-$serverName = "192.168.100.102, 1433";
-$connectionInfo = array( "Database"=>"ATP", "UID"=>"raihan", "PWD"=>"temp123#");
+$serverName = "gameterapia.database.windows.net";
+$connectionInfo = array( "Database"=>"gameterapia", "UID"=>"gameterapia", "PWD"=>" z12345678:");
 $conn = sqlsrv_connect( $serverName, $connectionInfo);
 
 if( $conn ) {

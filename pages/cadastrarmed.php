@@ -52,33 +52,55 @@ Licence URI: http://www.os-templates.com/template-terms
     <article class="introtxt">
 		<div class="input-group">
 			<label for="usr">Nome:</label>
-			<input type="text" class="form-control" aria-describedby="basic-addon1" id="usr">
+			<input type="text" class="form-control" aria-describedby="basic-addon1" id="usr" name="nome">
 		</div>
 		<div class="input-group">
 			<label for="usr">Sobrenome:</label>
-			<input type="text" class="form-control" aria-describedby="basic-addon1" id="usr">
+			<input type="text" class="form-control" aria-describedby="basic-addon1" id="usr" name="sobrenome">
 		</div>
 		<div class="input-group">
 			<label for="usr">Email:</label>
-			<input type="text" class="form-control" aria-describedby="basic-addon1" id="usr">
+			<input type="text" class="form-control" aria-describedby="basic-addon1" id="usr" name="email">
 		</div>
 		<div class="input-group">
 			<label for="pwd">Senha:</label>
-			<input type="password" class="form-control" aria-describedby="basic-addon1" id="pwd">
-		</div>
-		<div class="input-group">
-			<label for="pwd">Confirmar senha:</label>
-			<input type="password" class="form-control" aria-describedby="basic-addon1" id="pwd">
+			<input type="password" class="form-control" aria-describedby="basic-addon1" id="pwd" name="senha">
 		</div>
 		
 		<footer>
         <ul class="nospace inline pushright">
-          <li><a class="btn" href="../home.html">Entrar</a></li>
+          <li><a class="btn" name="acao" href="../home.html">Entrar</a></li>
         </ul>
       </footer>
     </article>
    </div>
 </div>
+<?php   
+	if(isset($_POST['acao']))   
+	{     
+	//conexão com o banco de dados     
+	include("bdconec.php");          
+	//recebendo os valores digitados pelo usuário     
+	$nome = $_POST['nome']; 
+	$sobrenome = $_POST['sobrenome'];     
+	$email = $_POST['email'];     
+	$senha = $_POST['senha'];              
+	//imprimindo o que foi digitado     
+	echo "<b>Nome:</b> $nome";  
+	echo "<b>Sobrenome:</b> $nome";   	
+	echo "<br /><b>E-mail:</b> $email";     
+	echo "<br /><b>Senha:</b> **";  
+	//criando o comando sql a ser executado     
+	$sql = "INSERT INTO Medico(ID,Nome,Sobrenome,Email,Senha) VALUES (NULL,'$nome','$sobrenome','$email', '$senha')"; 
+	//executando o comando     
+	$resultado = mysql_query($sql);     
+	//verificando se o comando foi executado com sucesso     
+	if($resultado)       
+		echo "Dados inseridos com sucesso.";     
+	else       
+		echo "Falha ao inserir ".mysql_error();       
+	}    
+?>
 <div class="wrapper bgded overlay" style="background-image:url('../images/demo/redwhite.jpg');">
   <div class="hoc container clear"> 
     <!-- ################################################################################################ -->
