@@ -87,7 +87,7 @@ Licence URI: http://www.os-templates.com/template-terms
 	$senha = $_POST['senha'];              
 	//imprimindo o que foi digitado     
 	echo "<b>Nome:</b> $nome";  
-	echo "<b>Sobrenome:</b> $nome";   	
+	echo "<b>Sobrenome:</b> $sobrenome";   	
 	echo "<br /><b>E-mail:</b> $email";     
 	echo "<br /><b>Senha:</b> **";  
 	//criando o comando sql a ser executado     
