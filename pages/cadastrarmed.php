@@ -67,6 +67,7 @@
 	  <?php   
 	if(isset($_POST['acao']))   
 	{     
+		echo"teste";
 	//conexão com o banco de dados     
 	include("dbconec.php"); 
 	//recebendo os valores digitados pelo usuário     
