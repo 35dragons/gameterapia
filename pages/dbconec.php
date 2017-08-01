@@ -1,12 +1,9 @@
-<?php
-$serverName = "gameterapia.database.windows.net";
-$connectionInfo = array( "UID"=>"gameterapia", "PWD"=>" z12345678:");
-$conn = sqlsrv_connect( $serverName, $connectionInfo);
-
-if( $conn ) {
-     echo "Connection established.<br />";
-}else{
-     echo "Connection could not be established.<br />";
-     die( print_r( sqlsrv_errors(), true));
-}
+<?php 
+ 
+$host = "gameterapia.azurewebsites.net"; $user = "gameterapia"; $password = "z12345678:"; $database = "gameterapia"; 
+ 
+sqlsrv_connect($host,$user,$password) or die("Falha na conexão com o Banco de Dados"); 
+ 
+sqlsrv_select_db($database) or die("Falha ao selecionar o database"); 
+ 
 ?>
