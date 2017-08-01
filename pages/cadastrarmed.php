@@ -81,7 +81,8 @@ Licence URI: http://www.os-templates.com/template-terms
 	if(isset($_POST['acao']))   
 	{     
 	//conexão com o banco de dados     
-	include("dbconec.php");          
+	include("dbconec.php"); 
+		echo"Conectado!";
 	//recebendo os valores digitados pelo usuário     
 	$nome = $_POST['nome']; 
 	$sobrenome = $_POST['sobrenome'];     
@@ -93,7 +94,7 @@ Licence URI: http://www.os-templates.com/template-terms
 	echo "<br /><b>E-mail:</b> $email";     
 	echo "<br /><b>Senha:</b> **";  
 	//criando o comando sql a ser executado     
-	$sql = "INSERT INTO Medico(ID,Nome,Sobrenome,Email,Senha) VALUES (NULL,'$nome','$sobrenome','$email', '$senha')"; 
+	$sql = "INSERT INTO Medico(Nome,Sobrenome,Email,Senha) VALUES ('$nome','$sobrenome','$email', '$senha')"; 
 	//executando o comando     
 	$resultado = mysql_query($sql);     
 	//verificando se o comando foi executado com sucesso     
