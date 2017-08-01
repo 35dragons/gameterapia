@@ -67,20 +67,14 @@ Licence URI: http://www.os-templates.com/template-terms
 			<label for="pwd">Senha:</label>
 			<input type="password" class="form-control" aria-describedby="basic-addon1" id="senha" name="senha">
 		</div>
-		
-		<footer>
-        <ul class="nospace inline pushright">
-          <li><input type="submit" name="acao" value="enviar"></li>
+		<input type="submit" name="acao" value="enviar">
 		  
-        </ul>
-      </footer>
 	  </form>
 	  <?php   
 	if(isset($_POST['acao']))   
 	{     
 	//conexão com o banco de dados     
 	include("dbconec.php"); 
-		echo"Conectado!";
 	//recebendo os valores digitados pelo usuário     
 	$nome = $_POST['nome']; 
 	$sobrenome = $_POST['sobrenome'];     
