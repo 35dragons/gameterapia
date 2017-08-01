@@ -71,13 +71,11 @@ Licence URI: http://www.os-templates.com/template-terms
 		<footer>
         <ul class="nospace inline pushright">
           <li><input type="submit" name="acao" value="enviar"></li>
+		  
         </ul>
       </footer>
 	  </form>
-    </article>
-   </div>
-</div>
-<?php   
+	  <?php   
 	if(isset($_POST['acao']))   
 	{     
 	//conexão com o banco de dados     
@@ -101,9 +99,13 @@ Licence URI: http://www.os-templates.com/template-terms
 	if($resultado)       
 		echo "Dados inseridos com sucesso.";     
 	else       
-		echo "Falha ao inserir ".mysql_error();       
+		echo "Falha ao inserir ".mysql_error();    
 	}    
 ?>
+    </article>
+   </div>
+</div>
+
 <div class="wrapper bgded overlay" style="background-image:url('../images/demo/redwhite.jpg');">
   <div class="hoc container clear"> 
     <!-- ################################################################################################ -->
