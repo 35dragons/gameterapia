@@ -79,7 +79,7 @@ Licence URI: http://www.os-templates.com/template-terms
 	if(isset($_POST['acao']))   
 	{     
 	//conexão com o banco de dados     
-	include("bdconec.php");          
+	include("dbconec.php");          
 	//recebendo os valores digitados pelo usuário     
 	$nome = $_POST['nome']; 
 	$sobrenome = $_POST['sobrenome'];     
