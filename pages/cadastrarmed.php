@@ -53,19 +53,19 @@ Licence URI: http://www.os-templates.com/template-terms
 	<form method="post" action="cad_usuarios.php" id="cad">
 		<div class="input-group">
 			<label for="usr">Nome:</label>
-			<input type="text" class="form-control" aria-describedby="basic-addon1" id="usr" name="nome">
+			<input type="text" class="form-control" aria-describedby="basic-addon1" id="nome" name="nome">
 		</div>
 		<div class="input-group">
 			<label for="usr">Sobrenome:</label>
-			<input type="text" class="form-control" aria-describedby="basic-addon1" id="usr" name="sobrenome">
+			<input type="text" class="form-control" aria-describedby="basic-addon1" id="sobrenome" name="sobrenome">
 		</div>
 		<div class="input-group">
 			<label for="usr">Email:</label>
-			<input type="text" class="form-control" aria-describedby="basic-addon1" id="usr" name="email">
+			<input type="text" class="form-control" aria-describedby="basic-addon1" id="email" name="email">
 		</div>
 		<div class="input-group">
 			<label for="pwd">Senha:</label>
-			<input type="password" class="form-control" aria-describedby="basic-addon1" id="pwd" name="senha">
+			<input type="password" class="form-control" aria-describedby="basic-addon1" id="senha" name="senha">
 		</div>
 		
 		<footer>
