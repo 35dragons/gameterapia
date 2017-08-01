@@ -70,7 +70,7 @@ Licence URI: http://www.os-templates.com/template-terms
 		
 		<footer>
         <ul class="nospace inline pushright">
-          <li><a class="btn" name="acao" href="../home.html">Entrar</a></li>
+          <li><input type="submit" name="acao" value="enviar"></li>
         </ul>
       </footer>
 	  </form>
